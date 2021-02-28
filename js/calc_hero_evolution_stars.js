@@ -163,14 +163,32 @@ function get_star_info(level)
 
         case 5:
             info = {
-                no_info: true,
-                // chips: [
-                //     { cost: ??, gold: ?? },
-                // ],
-                // shards: {
-                //     cost: 150,
-                //     gold: 200000,
-                // },
+                chips: [
+                    { cost: 150, gold: 24000 },
+                    { cost: 150, gold: 25000 },
+                    { cost: 150, gold: 26000 },
+                    { cost: 150, gold: 27000 },
+                    { cost: 150, gold: 28000 },
+                    { cost: 150, gold: 29000 },
+                    { cost: 150, gold: 30000 },
+                    { cost: 150, gold: 31000 },
+                    { cost: 150, gold: 32000 },
+                    { cost: 150, gold: 33000 },
+                    { cost: 150, gold: 34000 },
+                    { cost: 150, gold: 35000 },
+                    { cost: 150, gold: 36000 },
+                    { cost: 150, gold: 37000 },
+                    { cost: 150, gold: 38000 },
+                    { cost: 150, gold: 39000 },
+                    { cost: 150, gold: 40000 },
+                    { cost: 150, gold: 42000 },
+                    { cost: 150, gold: 44000 },
+                    { cost: 150, gold: 46000 },
+                ],
+                shards: {
+                    cost: 150,
+                    gold: 200000,
+                },
             }
             break
 
@@ -178,7 +196,7 @@ function get_star_info(level)
             info = {
                 no_info: true,
                 // chips: [
-                //     { cost: ??, gold: ?? },
+                //     { cost: 0, gold: 0 },
                 // ],
                 // shards: {
                 //     cost: 250,
@@ -194,8 +212,8 @@ function get_star_info(level)
                 //     { cost: 500, gold: 88000 },
                 // ],
                 // shards: {
-                //     cost: ??,
-                //     gold: ??,
+                //     cost: 0,
+                //     gold: 0,
                 // },
             }
             break
