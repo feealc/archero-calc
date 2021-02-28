@@ -14,22 +14,12 @@
 
     <script type="text/javascript" src="js/define.js"></script>
     <script type="text/javascript" src="js/generic.js"></script>
-    <script type="text/javascript" src="js/equip.js"></script>
-    <script type="text/javascript" src="js/talent.js"></script>
-    <script type="text/javascript" src="js/hero_upgrade.js"></script>
-    <script type="text/javascript" src="js/hero_evolution_stars.js"></script>
+    <script type="text/javascript" src="js/calc_equip.js"></script>
+    <script type="text/javascript" src="js/calc_talent.js"></script>
+    <script type="text/javascript" src="js/calc_hero_upgrade.js"></script>
+    <script type="text/javascript" src="js/calc_hero_evolution_stars.js"></script>
 </head>
 <body>
-    <!-- <header>
-        <nav class="menu">
-          <ul>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Portfólio</a></li>
-            <li><a href="#">Contato</a></li>
-          </ul>
-        </nav>
-    </header> -->
-
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Archero Calc</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,48 +41,7 @@
         </div>
     </nav>
 
-    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button>
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Open modal for @fat</button>
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Open modal for @getbootstrap</button> -->
-
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">New message</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <!-- <form>
-                        <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">Recipient:</label>
-                            <input type="text" class="form-control" id="recipient-name">
-                        </div>
-                        <div class="form-group">
-                            <label for="message-text" class="col-form-label">Message:</label>
-                            <textarea class="form-control" id="message-text"></textarea>
-                        </div>
-                    </form> -->
-                    <p>Modal body text goes here.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <div class="container">
-        <!-- <div class="alert alert-primary mt-5" role="alert" id="alert-teste">
-            This is a primary alert—check it out!
-        </div> -->
-        
-        <!-- <button type="button" id="btn-teste" class="btn btn-lg btn-block btn-primary mt-4 mb-3" data-toggle="modal" data-target="#exampleModal">Teste</button> -->
-        <!-- <button type="button" id="btn-teste" class="btn btn-lg btn-block btn-primary mt-4 mb-3">Teste</button> -->
-
         <div class="mb-3 mt-5 text-center">
             <div class="card mt-3 mb-5" id="calc-equip">
                 <div class="card-header">
@@ -101,19 +50,9 @@
                 <div class="card-body">
                     <div class="">
                         <span class="mr-2">Level:</span>
-                        <input type="text" id="equip-level-min" size="3" maxlength="2" value="2">
+                        <input type="number" id="equip-level-min" value="2">
                         <span class="mx-2">to</span>
-                        <input type="text" id="equip-level-max" size="3" maxlength="2" value="80">
-                        
-                        <!-- <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon1">Min</span>
-                        </div>
-                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" width="10">
-                        
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon1">Max</span>
-                        </div>
-                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" width="10"> -->
+                        <input type="number" id="equip-level-max" value="80">
                     </div>
                     <div>
                         <button type="button" id="btn-equip-common" title="Commom" class="btn btn-outline-primary mt-4 mb-3">2-20</button>
@@ -138,9 +77,9 @@
                 </div>
                 <div class="card-body">
                     <span class="mr-2">Times:</span>
-                    <input type="text" id="talent-level-min" size="3" maxlength="3" value="1">
+                    <input type="number" id="talent-level-min" value="1">
                     <span class="mx-2">to</span>
-                    <input type="text" id="talent-level-max" size="3" maxlength="3" value="20">
+                    <input type="number" id="talent-level-max" value="20">
                     <br>
                     <button type="button" id="talent-go" class="btn btn-primary mt-4 mb-3">Go</button>
                     <span id="talent-gold" class="span-result"></span>
@@ -154,9 +93,9 @@
                     </div>
                     <div class="card-body">
                         <span class="mr-2">Level:</span>
-                        <input type="text" id="hero-level-min" size="3" maxlength="2" value="2">
+                        <input type="number" id="hero-level-min" value="2">
                         <span class="mx-2">to</span>
-                        <input type="text" id="hero-level-max" size="3" maxlength="2" value="20">
+                        <input type="number" id="hero-level-max" value="20">
                         <br>
                         <!-- <div>
                             <button type="button" id="btn-hero-2-20" class="btn btn-outline-primary mt-4 mb-3">2-20</button>
@@ -170,16 +109,16 @@
                         <span id="hero-gold" class="span-result"></span>
                     </div>
                 </div>
-    
+
                 <div class="card mb-4 box-shadow">
                     <div class="card-header">
                         <h4 class="my-0 font-weight-normal">Hero Evolution (Stars)</h4>
                     </div>
                     <div class="card-body">
                         <span class="mr-2">Star:</span>
-                        <input type="text" id="hero-star-level-min" size="3" maxlength="1" value="1">
+                        <input type="number" id="hero-star-level-min" value="1">
                         <span class="mx-2">to</span>
-                        <input type="text" id="hero-star-level-max" size="3" maxlength="1" value="1">
+                        <input type="number" id="hero-star-level-max" value="1">
                         <br>
                         <button type="button" id="hero-star-go" class="btn btn-primary mt-4 mb-3">Go</button>
                         <span id="hero-star-chips" class="span-result"></span>
@@ -188,70 +127,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="card-deck mb-3 mt-5 text-center">
-            <!-- <div class="card mb-4 box-shadow">
-                <div class="card-header">
-                    <h4 class="my-0 font-weight-normal">Free</h4>
-                </div>
-                <div class="card-body">
-                    <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
-                    <ul class="list-unstyled mt-3 mb-4">
-                        <li>10 users included</li>
-                        <li>2 GB of storage</li>
-                        <li>Email support</li>
-                        <li>Help center access</li>
-                    </ul>
-                    <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>
-                </div>
-            </div> -->
-            <!-- <div class="card mb-4 box-shadow">
-                <div class="card-header">
-                    <h4 class="my-0 font-weight-normal">Hero</h4>
-                </div>
-                <div class="card-body">
-                    <span class="mr-2">Level:</span>
-                    <input type="text" id="hero-level-min" size="3" maxlength="2" value="2">
-                    <span class="mx-2">to</span>
-                    <input type="text" id="hero-level-max" size="3" maxlength="2" value="20">
-                    <br>
-                    <button type="button" id="hero-go" class="btn btn-lg btn-block btn-primary mt-4 mb-3">Go</button>
-                    <span id="hero-saphire" class="span-result"></span>
-                    <span id="hero-gold" class="span-result"></span>
-                </div>
-            </div> -->
-            <!-- <div class="card mb-4 box-shadow">
-                <div class="card-header">
-                    <h4 class="my-0 font-weight-normal">Talent</h4>
-                </div>
-                <div class="card-body">
-                    <span class="mr-2">Times:</span>
-                    <input type="text" id="talent-level-min" size="3" maxlength="3" value="1">
-                    <span class="mx-2">to</span>
-                    <input type="text" id="talent-level-max" size="3" maxlength="3" value="20">
-                    <br>
-                    <button type="button" id="talent-go" class="btn btn-lg btn-block btn-primary mt-4 mb-3">Go</button>
-                    <span id="talent-gold" class="span-result"></span>
-                </div>
-            </div> -->
-            
-            <!-- <div class="card mb-4 box-shadow">
-                <div class="card-header">
-                    <h4 class="my-0 font-weight-normal">Hero Evolution (Stars)</h4>
-                </div>
-                <div class="card-body">
-                    <span class="mr-2">Star:</span>
-                    <input type="text" id="hero-star-level-min" size="3" maxlength="1" value="1">
-                    <span class="mx-2">to</span>
-                    <input type="text" id="hero-star-level-max" size="3" maxlength="1" value="1">
-                    <br>
-                    <button type="button" id="hero-star-go" class="btn btn-lg btn-block btn-primary mt-4 mb-3">Go</button>
-                    <span id="hero-star-chips" class="span-result"></span>
-                    <span id="hero-star-shards" class="span-result"></span>
-                    <span id="hero-star-gold-total" class="span-result"></span>
-                </div>
-            </div> -->
         </div>
     </div>
 
