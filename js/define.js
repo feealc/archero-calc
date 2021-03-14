@@ -6,7 +6,7 @@ kBTN_TESTE_ID = "btn-teste"
 kBTN_TESTE = null
 kMSG_HELP = "Sorry. No information after level XXX." + 
             "\n" +
-            "To help, please DM me on Twitter or Instagram (@feealc)."
+            "To help, please DM me on Twitter (@feealc)."
 
 // ================================================================================================
 // Equip
