@@ -623,153 +623,134 @@ function get_hero_info(level)
 
         case 82:
             info = {
-                no_info: true,
-                // saphire: 240,
-                // gold: 520000,
+                saphire: 240,
+                gold: 560000,
             }
             break
 
         case 83:
             info = {
-                no_info: true,
-                // saphire: 240,
-                // gold: 520000,
+                saphire: 240,
+                gold: 600000,
             }
             break
 
         case 84:
             info = {
-                no_info: true,
-                // saphire: 240,
-                // gold: 520000,
+                saphire: 240,
+                gold: 640000,
             }
             break
 
         case 85:
             info = {
-                no_info: true,
-                // saphire: 240,
-                // gold: 520000,
+                saphire: 240,
+                gold: 680000,
             }
             break
 
         case 86:
             info = {
-                no_info: true,
-                // saphire: 240,
-                // gold: 520000,
+                saphire: 280,
+                gold: 720000,
             }
             break
 
         case 87:
             info = {
-                no_info: true,
-                // saphire: 240,
-                // gold: 520000,
+                saphire: 280,
+                gold: 760000,
             }
             break
 
         case 88:
             info = {
-                no_info: true,
-                // saphire: 240,
-                // gold: 520000,
+                saphire: 280,
+                gold: 800000,
             }
             break
 
         case 89:
             info = {
-                no_info: true,
-                // saphire: 240,
-                // gold: 520000,
+                saphire: 280,
+                gold: 900000,
             }
             break
 
         case 90:
             info = {
-                no_info: true,
-                // saphire: 240,
-                // gold: 520000,
+                saphire: 280,
+                gold: 1000000,
             }
             break
 
         case 91:
             info = {
-                no_info: true,
-                // saphire: 240,
-                // gold: 520000,
+                saphire: 320,
+                gold: 1100000,
             }
             break
 
         case 92:
             info = {
-                no_info: true,
-                // saphire: 240,
-                // gold: 520000,
+                saphire: 320,
+                gold: 1200000,
             }
             break
 
         case 93:
             info = {
-                no_info: true,
-                // saphire: 240,
-                // gold: 520000,
+                saphire: 320,
+                gold: 1300000,
             }
             break
 
         case 94:
             info = {
-                no_info: true,
-                // saphire: 240,
-                // gold: 520000,
+                saphire: 320,
+                gold: 1400000,
             }
             break
 
         case 95:
             info = {
-                no_info: true,
-                // saphire: 240,
-                // gold: 520000,
+                saphire: 320,
+                gold: 1500000,
             }
             break
 
         case 96:
             info = {
-                no_info: true,
-                // saphire: 240,
-                // gold: 520000,
+                saphire: 360,
+                gold: 1600000,
             }
             break
 
         case 97:
             info = {
-                no_info: true,
-                // saphire: 240,
-                // gold: 520000,
+                saphire: 360,
+                gold: 1700000,
             }
             break
 
         case 98:
             info = {
-                no_info: true,
-                // saphire: 240,
-                // gold: 520000,
+                saphire: 360,
+                gold: 1800000,
             }
             break
 
         case 99:
             info = {
-                no_info: true,
-                // saphire: 240,
-                // gold: 520000,
+                saphire: 360,
+                gold: 1900000,
             }
             break
 
         case 100:
             info = {
-                no_info: true,
-                // saphire: 240,
-                // gold: 520000,
+                saphire: 360,
+                gold: 2000000,
             }
             break
     }
